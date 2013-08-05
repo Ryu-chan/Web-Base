@@ -22,5 +22,3 @@ For more information visit the [Creative Commons Website]
 [Creative Commons Website]:http://creativecommons.org/choose/ "Creative Commons Website"
 
 [ryunomeiru@gmail.com]:(mailto:ryunomeiru@gmail.com)
-
-<style>img[alt=CCLegal]{float:right}</style>
