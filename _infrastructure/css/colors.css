@@ -1,0 +1,130 @@
+/* RED */
+.red-bg{
+	background-color:rgb(231, 76, 60);
+}
+.darkred-bg{
+	background-color:rgb(192, 57, 43);
+}
+.red{
+	color:rgb(231, 76, 60);
+}
+.darkred{
+	color:rgb(192, 57, 43);
+}
+/* ORANGE */
+.orange-bg{
+	background-color:rgb(230, 126, 34);
+}
+.darkorange-bg{
+	background-color:rgb(211, 84, 0);
+}
+.orange{
+	color:rgb(230, 126, 34);
+}
+.darkorange{
+	color:rgb(211, 84, 0);
+}
+/* YELLOW */
+.yellow-bg{
+	background-color:rgb(241, 196, 15);
+}
+.darkyellow-bg{
+	background-color:rgb(243, 156, 18);
+}
+.yellow{
+	color:rgb(241, 196, 15);
+}
+.darkyellow{
+	color:rgb(243, 156, 18);
+}
+/* GREEN */
+.green-bg{
+	background-color:rgb(46, 204, 113);
+}
+.darkgreen-bg{
+	background-color:rgb(39, 174, 96);
+}
+.green{
+	color:rgb(46, 204, 113);
+}
+.darkgreen{
+	color:rgb(39, 174, 96);
+}
+/* GREEN-BLUE */
+.greenblue-bg{
+	background-color:rgb(26, 188, 156);
+}
+.darkgreenblue-bg{
+	background-color:rgb(22, 160, 133);
+}
+.greenblue{
+	color:rgb(26, 188, 156);
+}
+.darkgreenblue{
+	color:rgb(22, 160, 133);
+}
+/* BLUE */
+.blue-bg{
+	background-color:rgb(52, 152, 219);
+}
+.darkblue-bg{
+	background-color:rgb(41, 128, 185);
+}
+.blue{
+	color:rgb(52, 152, 219);
+}
+.darkblue{
+	color:rgb(41, 128, 185);
+}
+/* VIOLET */
+.violet-bg{
+	background-color:rgb(155, 89, 182);
+}
+.darkviolet-bg{
+	background-color:rgb(142, 68, 173);
+}
+.violet{
+	color:rgb(155, 89, 182);
+}
+.darkviolet{
+	color:rgb(142, 68, 173);
+}
+/* BLACK */
+.black-bg{
+	background-color:rgb(52, 73, 94);
+}
+.darkblack-bg{
+	background-color:rgb(44, 62, 80);
+}
+.black{
+	color:rgb(52, 73, 94);
+}
+.darkblack{
+	color:rgb(44, 62, 80);
+}
+/* GREY */
+.grey-bg{
+	background-color:rgb(149, 165, 166);
+}
+.darkgrey-bg{
+	background-color:rgb(127, 140, 141);
+}
+.grey{
+	color:rgb(149, 165, 166);
+}
+.darkgrey{
+	color:rgb(127, 140, 141);
+}
+/* WHITE */
+.white-bg{
+	background-color:rgb(236, 240, 241);
+}
+.darkwhite-bg{
+	background-color:rgb(189, 195, 199);
+}
+.white{
+	color:rgb(236, 240, 241);
+}
+.darkwhite{
+	color:rgb(189, 195, 199);
+}
