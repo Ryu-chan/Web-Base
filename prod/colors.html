@@ -3,39 +3,18 @@
 <head>
 	<meta charset='utf-8' />
 
-	<script src='../js/jq/jquery.js'></script>
-	<script src='../js/jq/plugins/jquery.backstretch.js'></script>
-	<script src='../js/jq/plugins/jquery.circlemenu.js'></script>
-	<script src='../js/css/filters.css.js'></script>
+	<!--<script src='../js/jq/jquery.js'></script>
+	<script src='../js/jq/plugins/jquery.backstretch.js'></script>-->
 
+	<script src='../js/base.js'></script>
 	<script>
-		$(function(){
-			
-			$.backstretch('../res/bg/landscapes/lighthouse.jpg')
-
-			$('section')
-			.append('<article></article><article></article>')
-			.each(function(){
-				$(this).children('article').addClass($(this).attr('id')+'-bg').addClass('glass')
-				$(this).children('article:last-child')
-					.removeClass().addClass('dark'+$(this).attr('id')+'-bg').addClass('glass')
-				$(this).children('span').addClass($(this).attr('id')).append('<span>').children('span').addClass('dark'+$(this).attr('id')+'-bg').addClass('glass')
-			})
-			.addClass('inset')
-
-			$('span>span').click(function(){
-				if($(this).attr('id')!='in'){
-					$(this).parent().parent().css('height','250px')
-					$(this).removeClass('glass').addClass('inset').attr('id','in')
-				}else{
-					$(this).parent().parent().css('height','100px')
-					$(this).removeClass('inset').addClass('glass').attr('id','out')
-				}
-			})
-		})
-
-		
+		loadScripts([
+			'../js/jq/jquery.js',
+			'../js/jq/plugins/jquery.backstretch.js'
+		])
 	</script>
+
+	
 
 	<link rel='stylesheet' href='../css/order.css' />
 	<style>
@@ -121,4 +100,33 @@
 	<span>White</span>
 </section>
 </body>
+
+<script>
+		$(function(){
+			
+			$.backstretch('../res/bg/landscapes/lighthouse.jpg')
+
+			$('section')
+			.append('<article></article><article></article>')
+			.each(function(){
+				$(this).children('article').addClass($(this).attr('id')+'-bg').addClass('glass')
+				$(this).children('article:last-child')
+					.removeClass().addClass('dark'+$(this).attr('id')+'-bg').addClass('glass')
+				$(this).children('span').addClass($(this).attr('id')).append('<span>').children('span').addClass('dark'+$(this).attr('id')+'-bg').addClass('glass')
+			})
+			.addClass('inset')
+
+			$('span>span').click(function(){
+				if($(this).attr('id')!='in'){
+					$(this).parent().parent().css('height','250px')
+					$(this).removeClass('glass').addClass('inset').attr('id','in')
+				}else{
+					$(this).parent().parent().css('height','100px')
+					$(this).removeClass('inset').addClass('glass').attr('id','out')
+				}
+			})
+		})
+
+		
+	</script>
 </html>
