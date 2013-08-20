@@ -1,0 +1,44 @@
+
+$internal_colors:();
+
+$COLOR_NORMAL 		: 2;
+$COLOR_COMPLEMENT 	: 3;
+$COLOR_GRAY 		: 4;
+$COLOR_LIGHT		: 5;
+$COLOR_DARK			: 6;
+$COLOR_INVERTED		: 7;
+$COLOR_SATURATED	: 8;
+$COLOR_DESATURATED 	: 9;
+$COLOR_TRANSLUCENT	: 10;
+$COLOR_TRANSPARENT	: 11;
+
+
+@each $colordef in $define_colors{
+	$name: nth($colordef, 1);
+	$color: nth($colordef, 2);
+
+	$list:();
+
+	$list:append($list,$name,space);
+	$list:append($list,$color,space);
+	$list:append($list,complement($color),space);
+	$list:append($list,grayscale($color),space);
+	$list:append($list,lighten($color,10%),space);
+	$list:append($list,darken($color,10%),space);
+	$list:append($list,invert($color),space);
+	$list:append($list,saturate($color,30%),space);
+	$list:append($list,desaturate($color,30%),space);
+	$list:append($list,transparentize($color,0.4),space);
+	$list:append($list,transparentize($color,0.8),space);
+
+	$internal_colors:append($internal_colors,$list,comma);
+}
+
+@function color($color,$type:2){
+	@each $clist in $internal_colors{
+		@if (nth($clist,1) == $color){
+			@return nth($clist,$type);
+		}
+	}
+	@return #000;
+}
