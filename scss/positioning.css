@@ -1,0 +1,28 @@
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+
+.absolute{
+	position:absolute;
+}
+.relative{
+	position:relative;
+}
+
+.block{
+	display:block;
+}
+.inline-block{
+	display:inline-block;
+}
+
+.hidden{
+	visibility:hidden;
+}
+.remove{
+	display:none;
+}
+

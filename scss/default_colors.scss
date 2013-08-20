@@ -1,0 +1,32 @@
+$define_colors:
+	red 			rgb(231, 076, 060),
+	darkred 		rgb(192, 057, 043),
+
+	orange			rgb(230, 126, 034),
+	darkorange		rgb(211, 084, 000),
+
+	yellow 			rgb(241, 196, 015),
+	darkyellow		rgb(243, 156, 018),
+
+	green			rgb(046, 204, 113),
+	darkgreen		rgb(039, 174, 096),
+
+	greenblue		rgb(026, 188, 156),
+	darkgreenblue	rgb(022, 160, 133),
+
+	blue			rgb(052, 152, 219),
+	darkblue		rgb(041, 128, 185),
+
+	violet			rgb(155, 089, 182),
+	darkviolet		rgb(142, 068, 173),
+
+	black			rgb(052, 073, 094),
+	darkblack		rgb(044, 062, 080),
+
+	grey			rgb(149, 165, 166),
+	darkgrey		rgb(127, 140, 141),
+
+	white			rgb(236, 240, 241),
+	darkwhite		rgb(189, 195, 199);
+
+@import "colors.scss"

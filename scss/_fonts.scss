@@ -1,0 +1,60 @@
+@each $font in $define_fonts{
+	$name: 		nth($font, 1);
+	$weights: 	nth($font, 2);
+	$styles:	nth($font, 3);
+	$prefix:	nth($font, 4);
+	$filetypes: nth($font, 5);
+
+	@each $weight in $weights{
+		@each $style in $styles{
+			$src:();
+			@each $type in $filetypes{
+				$src:append($src,url(#{$prefix}#{$name}-#{$style}-#{$weight}.#{$type}),comma)
+			}
+			@font-face{
+				font-family:$name;
+				font-weight:$weight;
+				font-style:	$style;
+				src:$src;
+				
+			}
+		}
+	}
+
+	
+	.#{$name}{
+		font-family:$name;
+	}
+}
+
+
+
+
+.superbold{
+	font-weight:800;
+}
+.bold{
+	font-weight:700;
+}
+.semibold{
+	font-weight:600;
+}
+.medium{
+	font-weight:500;
+}
+.normal{
+	font-weight:400;
+}
+.book{
+	font-weight:300;
+}
+.light{
+	font-weight:200;
+}
+.extralight{
+	font-weight:100;
+}
+
+.italic{
+	font-style:italic;
+}

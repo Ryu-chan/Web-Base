@@ -1,0 +1,23 @@
+@each $color in $define_colors{
+	$k: nth($color, 1);
+	$v: nth($color, 2);
+
+	.#{$k}-fg{
+		color:$v;
+	}
+	.#{$k}-bg{
+		background-color:$v;
+	}
+	.#{$k}-fg-comp{
+		color:complement($v);
+	}
+	.#{$k}-bg-comp{
+		background-color:complement($v);
+	}
+	.#{$k}-fg-gray{
+		color:grayscale($v);
+	}
+	.#{$k}-bg-gray{
+		background-color:grayscale($v);
+	}
+}

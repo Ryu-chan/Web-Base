@@ -1,0 +1,92 @@
+@mixin browser($property,$settings){
+	-webkit-#{$property}:	$settings;
+	   -moz-#{$property}:	$settings;
+	    -ms-#{$property}:	$settings;
+	     -o-#{$property}:	$settings;
+	        #{$property}:	$settings;
+}
+
+
+@mixin dims($width,$height){
+	width:			$width;
+	height:			$height;
+}
+
+@mixin box($padding:0px,$border:0px,$margin:0px){
+	padding:		$padding;
+	border:			$border;
+	margin:			$margin;
+}
+
+@mixin font($family:inherit,$size:16px,$weight:400,$transform:none,$variant:none){
+	font-family:	$family;
+	font-size:		$size;
+	font-weight:	$weight;
+	font-variant:	$variant;
+	text-transform:	$transform;
+}
+
+@mixin position($type:relative,$top:0px,$left:0px,$bottom:0px,$right:0px){
+	position:		$type;
+	top:			$top;
+	left:			$left;
+	bottom:			$bottom;
+	right:			$right;
+}
+
+
+@mixin clear_anchors(){
+	a{
+		text-decoration:none;
+		color:inherit;
+	}
+}
+@mixin clear_box(){
+	*{
+		@include box();
+	}
+}
+@mixin clear_lists(){
+	ul{
+		list_style:none;
+		li{
+			display:inline-block;
+		}
+	}
+}
+
+@mixin clear_box-sizing($sizing:border-box){
+	*{
+		@include browser(box-sizing,$sizing);
+		&:before{
+			@include browser(box-sizing,$sizing);
+		}
+		&:after{
+			@include browser(box-sizing,$sizing);
+		}
+	}
+}
+
+@mixin gradient($start:top,$start_color:#FFF,$end_color:#000){
+	background-image: -webkit-linear-gradient($start,$startcolor 0%,$end_color 100%);
+	background-image:    -moz-linear-gradient($start,$startcolor 0%,$end_color 100%);
+	background-image:     -ms-linear-gradient($start,$startcolor 0%,$end_color 100%);
+	background-image:      -o-linear-gradient($start,$startcolor 0%,$end_color 100%);
+	background-image:         linear-gradient(to $start,$startcolor 0%,$end_color 100%);
+}
+
+@mixin border-radius($radius){
+	@include browser(border-radius,$radius);
+}
+
+@mixin box-shadow($settings){
+	@include browser(box-shadow,$settings);
+}
+
+@mixin text-shadow($settings){
+	@include broswer(text-shadow,$settings);
+}
+
+@mixin transition($what:all,$duration:300ms,$easing:linear){
+	@include broswer(transition,$what $duration $easing)
+}

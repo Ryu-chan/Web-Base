@@ -1,0 +1,74 @@
+@font-face {
+  font-family: OpenSans;
+  font-weight: 800;
+  font-style: normal;
+  src: url(../OpenSans-normal-800.ttf), url(../OpenSans-normal-800.otf); }
+
+@font-face {
+  font-family: OpenSans;
+  font-weight: 800;
+  font-style: italic;
+  src: url(../OpenSans-italic-800.ttf), url(../OpenSans-italic-800.otf); }
+
+@font-face {
+  font-family: OpenSans;
+  font-weight: 400;
+  font-style: normal;
+  src: url(../OpenSans-normal-400.ttf), url(../OpenSans-normal-400.otf); }
+
+@font-face {
+  font-family: OpenSans;
+  font-weight: 400;
+  font-style: italic;
+  src: url(../OpenSans-italic-400.ttf), url(../OpenSans-italic-400.otf); }
+
+@font-face {
+  font-family: OpenSans;
+  font-weight: 100;
+  font-style: normal;
+  src: url(../OpenSans-normal-100.ttf), url(../OpenSans-normal-100.otf); }
+
+@font-face {
+  font-family: OpenSans;
+  font-weight: 100;
+  font-style: italic;
+  src: url(../OpenSans-italic-100.ttf), url(../OpenSans-italic-100.otf); }
+
+.OpenSans {
+  font-family: OpenSans; }
+
+@font-face {
+  font-family: OleoScript;
+  font-weight: 100;
+  font-style: normal;
+  src: url(../OleoScript-normal-100.ttf); }
+
+.OleoScript {
+  font-family: OleoScript; }
+
+.superbold {
+  font-weight: 800; }
+
+.bold {
+  font-weight: 700; }
+
+.semibold {
+  font-weight: 600; }
+
+.medium {
+  font-weight: 500; }
+
+.normal {
+  font-weight: 400; }
+
+.book {
+  font-weight: 300; }
+
+.light {
+  font-weight: 200; }
+
+.extralight {
+  font-weight: 100; }
+
+.italic {
+  font-style: italic; }
