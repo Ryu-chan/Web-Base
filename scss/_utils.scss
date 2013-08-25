@@ -1,3 +1,28 @@
+@function is_in($item,$list){
+	@each $check in $list{
+		@if $item == $check{
+			@return true;
+		}
+	}
+	@return false;
+}
+
+@function car($list){
+	@return nth($list,1)
+}
+
+@function cdr($list){
+	$ret:();
+	@for $i 2 through length($list){
+		append($ret,nth($list,$i));
+	}
+	@return $ret;
+}
+
+
+
+
+
 @mixin browser($property,$settings){
 	-webkit-#{$property}:	$settings;
 	   -moz-#{$property}:	$settings;
@@ -18,13 +43,7 @@
 	margin:			$margin;
 }
 
-@mixin font($family:inherit,$size:16px,$weight:400,$transform:none,$variant:none){
-	font-family:	$family;
-	font-size:		$size;
-	font-weight:	$weight;
-	font-variant:	$variant;
-	text-transform:	$transform;
-}
+
 
 @mixin position($type:relative,$top:0px,$left:0px,$bottom:0px,$right:0px){
 	position:		$type;
