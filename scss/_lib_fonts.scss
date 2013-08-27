@@ -1,3 +1,14 @@
+
+$default_fonts:() !default;
+
+@each $font in $default_fonts{
+	@include declare-font-face($font);
+
+	.#{nth($font,1)}{
+		font-family:nth($font,1);
+	}
+}
+
 @mixin declare-font-face(
 	$font-family,
 	$font-filename,
@@ -6,7 +17,7 @@
 	$font-stretch	:normal
 ){
 	@font-face{
-		fomt-family:'#{$font-family}';
+		font-family:'#{$font-family}';
 		src: url(font-path('#{font-filename}.eot'));
 		src: url(font-path('#{$font-filename}.eot?#iefix')) format('embedded-opentype'),
 		url(font-path('#{$font-filename}.woff')) format('woff'),
@@ -17,20 +28,6 @@
 		font-stretch: $font-stretch;
 	}
 }
-
-@each @font in $define_fonts{
-	@include declare-font-face(
-		nth($font,1),
-		nth($font,2),
-		nth($font,3),
-		nth($font,4),
-		nth($font,5)
-	);
-	.nth($font,1){
-		font-family:nth($font,1);
-	}
-}
-
 
 @mixin font($family:inherit,$size:16px,$weight:400,$transform:none,$variant:none){
 	font-family:	$family;
