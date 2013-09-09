@@ -37,6 +37,16 @@ Run:
     source ENV/bin/activate
     
     pip install -r _base/py/requirements.txt
+
+    IF USING DJANGO
+    	cd {PROJECT}
+    	check django version:
+    	python -c "import django; print(django.get_version())"
+    	start your project using:
+    	django-admin.py startproject {site_name}
+
+
+
     
 Text Editors (Optional)
 ---
