@@ -44,6 +44,8 @@ Run:
     	python -c "import django; print(django.get_version())"
     	start your project using:
     	django-admin.py startproject {site_name}
+        from this point onward, use: 
+        https://docs.djangoproject.com/en/1.5/intro/tutorial01/
 
 
 
