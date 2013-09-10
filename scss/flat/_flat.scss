@@ -1,6 +1,8 @@
 @import "../_utils.scss";
 @import "../_classes.scss";
 
+/** COLORS **/
+
 $define_colors:
 	red 			rgb(231, 076, 060),
 	darkred 		rgb(192, 057, 043),
@@ -37,5 +39,23 @@ $define_colors:
 @import "../_lib_colors.scss";
 
 
-@import "_buttons.scss";
-@import "_dropdowns.scss";
+/** BUTTONS **/
+
+@mixin button($tag:'.button',$bg:color(black),$fg:color(white)){
+	#{$tag}{
+		background-color:$bg;
+		color:$fg !important;
+		box-shadow:0px 2px 0px darken($bg,10%);
+		position:relative;
+		text-align:center;
+		@include border-radius(6px);
+		&:hover{
+			background-color:lighten($bg,5%);
+		}
+		&:active{
+			background-color:darken($bg,10%);
+			box-shadow:inset 0px 2px 0px darken($bg,20%);
+			top:2px;
+		}
+	}
+}
