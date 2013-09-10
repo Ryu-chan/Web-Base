@@ -1,0 +1,140 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext,cyrillic,greek-ext,greek,vietnamese);
+/* Cross browser */
+/* Sizes */
+/* Clears */
+/* Colors */
+/* Styles */
+/* Functions */
+/*
+@function is_in($item,$list){
+	@each $check in $list{
+		@if $item == $check{
+			@return true;
+		}
+	}
+	@return false;
+}
+
+@function car($list){
+	@return nth($list,1)
+}
+
+@function cdr($list){
+	$ret:();
+	@for $i 2 through length($list){
+		append($ret,nth($list,$i));
+	}
+	@return $ret;
+}
+*/
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.absolute {
+  position: absolute; }
+
+.relative {
+  position: relative; }
+
+.block {
+  display: block; }
+
+.inline-block {
+  display: inline-block; }
+
+.hidden {
+  visibility: hidden; }
+
+.remove {
+  display: none; }
+
+.clearfix {
+  clear: both; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+  *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; }
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; }
+
+* {
+  font-family: inherit;
+  font-weight: inherit; }
+
+*:before, *:after {
+  display: block;
+  position: absolute;
+  content: ""; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+* {
+  padding: 0px;
+  border: 0px;
+  margin: 0px; }
+
+ul {
+  list_style: none; }
+  ul li {
+    display: inline-block; }
+
+* {
+  -webkit-appearance: none !important; }
+
+body {
+  background: #ecf0f1;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 50px 100px; }
+
+header {
+  color: #e74c3c;
+  font-size: 3em; }
+
+header > span {
+  color: #7f8c8d; }
+
+header > a {
+  color: #e74c3c; }
+
+header > a:hover {
+  color: #ea6153; }
+
+h2 {
+  color: #c0392b;
+  margin-top: 20px; }
+
+hr {
+  border: 1px dashed #95a5a6;
+  margin: 10px 0; }
+
+a {
+  color: #3498db;
+  text-decoration: none; }
+
+a:hover {
+  color: #2980b9; }
+
+ /*
+a:visited{
+	color: color(violet);
+} */

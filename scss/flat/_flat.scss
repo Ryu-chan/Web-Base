@@ -1,3 +1,6 @@
+@import "../_utils.scss";
+@import "../_classes.scss";
+
 $define_colors:
 	red 			rgb(231, 076, 060),
 	darkred 		rgb(192, 057, 043),
@@ -31,26 +34,8 @@ $define_colors:
 
 	!default;
 
+@import "../_lib_colors.scss";
 
-$internal_colors:();
 
-@each $colordef in $define_colors{
-	$name: nth($colordef, 1);
-	$color: nth($colordef, 2);
-
-	$list:();
-
-	$list:append($list,$name,space);
-	$list:append($list,$color,space);
-
-	$internal_colors:append($internal_colors,$list,comma);
-}
-
-@function color($color){
-	@each $clist in $internal_colors{
-		@if (nth($clist,1) == $color){
-			@return nth($clist,2);
-		}
-	}
-	@return #000;
-}
+@import "_buttons.scss";
+@import "_dropdowns.scss";

@@ -1,0 +1,49 @@
+@import "../../../scss/flat/_flat.scss";
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext,cyrillic,greek-ext,greek,vietnamese);
+
+@include clear_set();
+
+body{
+	background:color(white);
+	font-family:'Open Sans',sans-serif;
+	font-weight:300;
+	margin:0;
+	padding:50px 100px;
+}
+
+header{
+	color:color(red);
+	font-size:3em;
+}
+header>span{
+	color:color(darkgrey);
+}
+header>a{
+	color:color(red);
+}
+header>a:hover{
+	color:lighten(color(red),5%);
+}
+
+h2{
+	color:color(darkred);
+	margin-top:20px;
+}
+
+hr{
+	border:1px dashed color(grey);
+	margin:10px 0;
+}
+
+a{
+	color: color(blue);
+	text-decoration:none;
+}
+a:hover{
+	color: color(darkblue);
+}/*
+a:visited{
+	color: color(violet);
+} */

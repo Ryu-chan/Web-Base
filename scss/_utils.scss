@@ -1,4 +1,5 @@
 
+/* Cross browser */
 
 @mixin browser($property,$settings){
 	-webkit-#{$property}:	$settings;
@@ -8,6 +9,8 @@
 	        #{$property}:	$settings;
 }
 
+
+/* Sizes */
 
 @mixin dims($width,$height){
 	width:			$width;
@@ -30,6 +33,7 @@
 }
 
 
+/* Clears */
 
 @mixin clear_anchors(){
 	a{
@@ -71,6 +75,12 @@
 	}
 }
 
+@mixin clear_appearance(){
+	*{
+		-webkit-appearance: none !important;
+	}
+}
+
 @mixin clear_set(){
 	@include clear_box-sizing();
 	*{
@@ -81,10 +91,11 @@
 	@include clear_anchors();
 	@include clear_box();
 	@include clear_lists();
+	@include clear_appearance();
 }
 
 
-
+/* Colors */
 
 @mixin gradient($start:top,$start_color:#FFF,$end_color:#000){
 	background-image: -webkit-linear-gradient($start,$startcolor 0%,$end_color 100%);
@@ -93,6 +104,9 @@
 	background-image:      -o-linear-gradient($start,$startcolor 0%,$end_color 100%);
 	background-image:         linear-gradient(to $start,$startcolor 0%,$end_color 100%);
 }
+
+
+/* Styles */
 
 @mixin border-radius($radius){
 	@include browser(border-radius,$radius);
@@ -109,3 +123,28 @@
 @mixin transition($what:all,$duration:300ms,$easing:linear){
 	@include broswer(transition,$what $duration $easing)
 }
+
+
+/* Functions */
+/*
+@function is_in($item,$list){
+	@each $check in $list{
+		@if $item == $check{
+			@return true;
+		}
+	}
+	@return false;
+}
+
+@function car($list){
+	@return nth($list,1)
+}
+
+@function cdr($list){
+	$ret:();
+	@for $i 2 through length($list){
+		append($ret,nth($list,$i));
+	}
+	@return $ret;
+}
+*/

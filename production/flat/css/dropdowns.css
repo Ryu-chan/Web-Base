@@ -1,0 +1,68 @@
+/* Cross browser */
+/* Sizes */
+/* Clears */
+/* Colors */
+/* Styles */
+/* Functions */
+/*
+@function is_in($item,$list){
+	@each $check in $list{
+		@if $item == $check{
+			@return true;
+		}
+	}
+	@return false;
+}
+
+@function car($list){
+	@return nth($list,1)
+}
+
+@function cdr($list){
+	$ret:();
+	@for $i 2 through length($list){
+		append($ret,nth($list,$i));
+	}
+	@return $ret;
+}
+*/
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.absolute {
+  position: absolute; }
+
+.relative {
+  position: relative; }
+
+.block {
+  display: block; }
+
+.inline-block {
+  display: inline-block; }
+
+.hidden {
+  visibility: hidden; }
+
+.remove {
+  display: none; }
+
+.clearfix {
+  clear: both; }
+
+select {
+  background: #e74c3c;
+  color: #ecf0f1;
+  outline: none;
+  text-align: left; }
+  select:hover {
+    background-color: #ea6153; }
+  select:active {
+    background-color: #d62c1a; }
+
+select {
+  font-size: 14px;
+  padding: 7px 30px; }

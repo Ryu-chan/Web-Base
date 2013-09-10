@@ -1,0 +1,8 @@
+@import "../../../scss/flat/_flat.scss";
+
+@include dropdown('select',color(red));
+
+select{
+	font-size:14px;
+	padding:7px 30px;
+}
