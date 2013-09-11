@@ -38,6 +38,9 @@ $define_colors:
 
 @import "../_lib_colors.scss";
 
+/** ICONS **/
+@import "_icons.scss";
+
 
 /** BUTTONS **/
 
@@ -59,3 +62,42 @@ $define_colors:
 		}
 	}
 }
+
+/** ACCORDIONS **/
+@mixin accordion($tag:'.accordion',$hbg:color(black),$cbg:null,$fg:color(white)){
+	#{$tag}{
+		@include border-radius(10px);
+		overflow:hidden;
+		&>*:nth-child(2n+1){
+			cursor:pointer;
+			outline:none;
+			color:$fg;
+			background:$hbg;
+			&:not(:last-child){
+				border-bottom:1px solid darken($hbg,3%);
+			}
+		}
+		&>*:nth-child(2n){
+			color:$fg;
+			margin-left:-1px;
+			margin-right:-1px;
+			@if $cbg == null{
+				background:darken($hbg,7%);
+				box-shadow: 
+					inset 0px 2px 0px darken($hbg,10%),
+					inset 0px -1px 0px darken($hbg,10%);
+			} @else {
+				background:$cbg;
+				box-shadow: 
+					inset 0px 2px 0px darken($cbg,10%),
+					inset 0px -1px 0px darken($cbg,10%);
+			}
+			
+			
+		}
+	}
+}
+
+
+
+

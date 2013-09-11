@@ -49,6 +49,15 @@ a:visited{
 	color: color(violet);
 } */
 
+/** ICONS **/
+#icons>div{
+	display:block;
+	width:48px;
+	height:48px;
+	margin:10px;
+	float:left;
+}
+
 
 /** BUTTONS **/
 .buttons{
@@ -75,3 +84,22 @@ a:visited{
 @include button('.white',color(white),color(darkgrey));
 
 /** TOOLTIPS **/
+.ui-tooltip{
+	background:color(red);
+}
+
+/** ACCORDIONS **/
+@include accordion('*[accordion]',color(red),color(black));
+
+*[accordion]>*:nth-child(2n+1){
+	padding:10px;
+}
+*[accordion]>*:nth-child(2n){
+	padding:12px;
+}
+
+
+
+
+
+

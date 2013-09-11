@@ -1,23 +1,31 @@
 $(function(){
 	//Tooltips
 
-	/** Requires jquery, qtip */
+	/** Requires jquery, jqueryui */
 	$('[tooltip]').each(function(){
-		$(this).qtip({
+		$(this).tooltip({
 			content: $(this).attr('tooltip'),
-			position: {
-				target: 'mouse',
-            	adjust: { x: 5, y: 5 },
-            	viewport: $(window)
-            }
+			track:true,
+			items:$(this)
 		})
+		console.log($(this).attr('tooltip'))
 	})
 
 	//Accordion
 
 	/** Requires jquery, jqueryui */
-	$('[data-accordion]').each(function(){
-		$(this).accordion($.parseJSON($(this).data('accordion')));
+	$('[accordion]').each(function(){
+		$(this).accordion({
+			collapsible:true,
+			heightStyle: "content",
+			header:$(this).attr('accordion'),
+			active: false
+		});
+	})
+
+	//Icons
+	$('[icon]').each(function(){
+		$(this).addClass($(this).attr('icon'))
 	})
 
 

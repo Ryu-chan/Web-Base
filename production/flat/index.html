@@ -7,13 +7,12 @@
 	<link rel='stylesheet' href='css/flat.css' />
 	<script src="../../js/jq/jquery.js"></script>
 	<script src="../../js/jq/jqueryui.js"></script>
-	<script src="../../js/jq/plugins/jquery.qtip.js"></script>
 	<script src="../../js/flat.js"></script>
 </head>
 <body>
 	<header>Flat <span>UI</span></header>
 
-	<h2>Buttons</h2><hr/>
+	<h2>Buttons</h2><hr class="clearfix"/>
 	<section class="buttons">
 		<a href='#' class='button greenblue'>Sample Button</a>
 		<a href='#' class='button green'>Sample Button</a>
@@ -27,13 +26,13 @@
 		<a href='#' class='button grey'>Sample Button</a>
 	</section>
 
-	<h2>Tooltips</h2><hr/>
+	<h2>Tooltips</h2><hr class="clearfix"/>
 	<section class="tooltips">
 		<a href="#" tooltip="This is a tooltip">Hover!</a>
 	</section>
 
-	<h2>Accordion</h2><hr/>
-	<div id="accordion" accordion='{"collapsible":true,"header":"h3"}'>
+	<h2>Accordion</h2><hr class="clearfix"/>
+	<div id="accordion" accordion='h3'>
 	  <h3>Section 1</h3>
 	  <div>
 	    <p>
@@ -81,6 +80,13 @@
 	    </p>
 	  </div>
 	</div>
+
+	<h2>File Icons</h2><hr class="clearfix"/>
+	<section id="icons" class="clearfix">
+		<div icon='acc'></div>
+		<div icon='ai'></div>
+
+	</section>
 
 
 </body>
