@@ -89,7 +89,7 @@ a:visited{
 }
 
 /** ACCORDIONS **/
-@include accordion('*[accordion]',color(red),color(black));
+@include accordion('*[accordion]',lighten(color(black),4%),color(black));
 
 *[accordion]>*:nth-child(2n+1){
 	padding:10px;

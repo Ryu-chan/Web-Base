@@ -365,9 +365,9 @@ a:visited{
     cursor: pointer;
     outline: none;
     color: #ecf0f1;
-    background: #e74c3c; }
+    background: #3b536b; }
     *[accordion] > *:nth-child(2n+1):not(:last-child) {
-      border-bottom: 1px solid #e53f2e; }
+      border-bottom: 1px solid #364c61; }
   *[accordion] > *:nth-child(2n) {
     color: #ecf0f1;
     margin-left: -1px;
