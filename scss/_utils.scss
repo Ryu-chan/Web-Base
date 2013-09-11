@@ -48,7 +48,7 @@
 }
 @mixin clear_lists(){
 	ul{
-		list_style:none;
+		list-style:none;
 		li{
 			display:inline-block;
 		}
@@ -76,7 +76,7 @@
 }
 
 @mixin clear_appearance(){
-	*{
+	select{
 		-webkit-appearance: none !important;
 	}
 }

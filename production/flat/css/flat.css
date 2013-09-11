@@ -94,11 +94,11 @@ a {
   margin: 0px; }
 
 ul {
-  list_style: none; }
+  list-style: none; }
   ul li {
     display: inline-block; }
 
-* {
+select {
   -webkit-appearance: none !important; }
 
 body {
