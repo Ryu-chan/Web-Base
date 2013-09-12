@@ -24,9 +24,9 @@ $(function(){
 	})
 
 	//Icons
-	$('[icon]').each(function(){
+	/*$('[icon]').each(function(){
 		$(this).addClass($(this).attr('icon'))
-	})
+	})*/
 
 
 })
