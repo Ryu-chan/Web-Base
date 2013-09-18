@@ -52,6 +52,7 @@ $define_colors:
 		position:relative;
 		text-align:center;
 		@include border-radius(6px);
+
 		&:hover{
 			background-color:lighten($bg,5%);
 		}

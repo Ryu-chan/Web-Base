@@ -117,11 +117,11 @@
 }
 
 @mixin text-shadow($settings){
-	@include broswer(text-shadow,$settings);
+	@include browser(text-shadow,$settings);
 }
 
 @mixin transition($what:all,$duration:300ms,$easing:linear){
-	@include broswer(transition,$what $duration $easing)
+	@include browser(transition,$what $duration $easing)
 }
 
 
